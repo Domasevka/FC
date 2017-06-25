@@ -1,0 +1,179 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title FC
+    //link(rel='stylesheet', href='css/normalize.css')
+    //link(rel='stylesheet', href='css/fonts.css')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    header.page-header
+      .container
+        a.page-header__logo(href="#")
+          img(src="img/logo.jpg" alt="Интерьерное бюро")
+        nav.main-nav.main-nav--closed.main-nav--nojs
+         button(type="button").main-nav__toogle Открыть меню
+         .main-nav__wrapper
+            ul.main-nav__list
+              li.main-nav__item.main-nav__item--active
+                a(href="#") Студия
+              li.main-nav__item.main-nav__item--active
+                a(href="#") Портфолио
+              li.main-nav__item.main-nav__item--active
+                a(href="#") Услуги
+              li.main-nav__item.main-nav__item--active
+                a(href="#") Цены
+              li.main-nav__item.main-nav__item--active
+                a(href="#") Контакты
+            a.page-header__btn.btn(href="#") Заказать звонок
+            ul.main-nav__user-list
+              li.main-nav__user-item
+                a.main-nav__user-phone(href="#" title="phone") +7 (999) 280-07-00
+    section.products
+      .banner
+        .container
+          h1 Создаём интерьеры для красивой и комфортной жизни
+          a(href="#").products__btn.btn Все проекты
+          ul.products__list
+            li.products__item
+              a(href="#").products__item-img
+                img(src="img/icon_1.svg")
+                span Жилые интерьеры
+            li.products__item
+              a(href="#").products__item-img
+                img(src="img/icon_2.svg")
+                span Общественные интерьеры
+            li.products__item
+              a(href="#").products__item-img
+                img(src="img/icon_3.svg")
+                span Ландшафтный дизайн
+            li.products__item
+              a(href="#").products__item-img
+                img(src="img/icon_4.svg")
+                span Архитектура и строительство
+    section.introduction
+      .container
+        .introduction__row
+          .introduction__column
+          .introduction__column
+    section.projects
+      .container
+        h2 Наши проекты
+        h3 Мы работаем в разных стилях и можем найти подход к любому даже самому сомневающемуся клиенту
+        .projects__row
+          article.projects__col
+            span.projects__col-img
+              img
+            a.projects__col-content(href="#")
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+          article.projects__col
+            span.projects__col-img
+              img
+            a.projects__col-content(href="#")
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+          article.projects__col
+            span.projects__col-img
+              img
+            a.projects__col-content(href="#")
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+        .projects__row
+          article.projects__col
+            span.projects__col-img
+              img
+            a.projects__col-content(href="#")
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+          article.projects__col
+            span.projects__col-img
+              img
+            a.projects__col-content(href="#")
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+          article.projects__col
+            span.projects__col-img
+              img
+            a(href="#").projects__col-content
+              span.projects__col-title Дом в подмосковье
+              p.projects__col-text 250 кв.м.
+        a.projects__btn.btn(href="#") Посмотреть все
+    section.reviews
+      .container
+        .reviews__wrapper.slider
+          h2 Самое главное – итоговый результат и довольные заказчики
+          .reviews__items
+            blockquote.reviews__item.slider__item
+              .reviews__author-foto
+                img(src="img/img.jpg")
+              p
+            button.reviews__next(type="button")
+            ul.reviews__toggles
+    section.advantages
+      .container
+        .advantages__wrapper
+          ul.advantages__list
+            li.advantages__item
+              span 43
+              p проекта в портфолио
+            li.advantages__item
+              span 10
+              p профессионалов своего дела
+            li.advantages__item
+              span 3
+              p города и это не передел
+          .advantages__info
+            form
+              p.advantages__text
+              label(for="phonenum")
+              input(id="phonenum" type="tel")
+              input.btn(type="submit" value="Отправить")
+    section.posts
+      .container
+        h2 Блог
+        .posts__row
+          article.posts__col
+            header.posts__item
+              a.posts__item--link
+                span Подушки в интерьер
+                time(datetime="2016-06-22") 22/06/16
+                i.posts__item--icon
+                  img(src="img/img.jpg")
+            a.posts__item--photo(href="#")
+              img.posts__item--img(src="img/img.jpg")
+          article.posts__col
+            header.posts__item
+              a.posts__item--link
+                span Скандинавский стиль
+                time(datetime="2016-06-22") 22/06/16
+                i.posts__item--icon
+                  img(src="img/img.jpg")
+            a.posts__item--photo(href="#")
+              img.posts__item--img(src="img/img.jpg")
+        a(href="#").btn Читать блог
+    footer.page-footer
+      .container
+        .page-footer__wrapper
+          .page-footer__item
+            img(src="img/logo.jpg" alt="Интерьерное бюро").page-footer__logo
+          .page-footer__item.page-footer__item-center
+            .page-footer__subitem
+              p.page-footer__text Россия, Москва <br> Санкт-Петербург
+              a.page-footer__text(href="tel:+789992500700") 8 (999) 250-07-00
+            .page-footer__subitem
+              p.page-footer__text
+                | Великий Новгород
+              a.page-footer__text(href="tel:+789062003365") 8 (906) 200-33-65
+            .page-footer__subitem
+              a.page-footer__text(href="#" target="_blank") festivalcolor@mail.ru
+          .page-footer__item
+            p.page-footer__social
+              span.social-links
+                a.social-link.social-link--vk(href="#")
+                a.social-link.social-link--fb(href="#")
+                a.social-link.social-link--g(href="#")
+    script(src="js/jquery-2.2.0.min.js")
+    script(src="js/init.js")
+
