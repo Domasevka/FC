@@ -10,26 +10,43 @@ html(lang='ru')
   body
     header.page-header
       .container
-        a.page-header__logo(href="#")
-          img(src="img/logo.jpg" alt="Интерьерное бюро")
-        nav.main-nav.main-nav--closed.main-nav--nojs
-         button(type="button").main-nav__toogle Открыть меню
-         .main-nav__wrapper
+        .page-header__wrapper
+          a.page-header__logo(href="#")
+            img(src="src/img/logo.svg" alt="Интерьерное бюро")
+          .main-nav
             ul.main-nav__list
               li.main-nav__item.main-nav__item--active
-                a(href="#") Студия
-              li.main-nav__item.main-nav__item--active
-                a(href="#") Портфолио
-              li.main-nav__item.main-nav__item--active
-                a(href="#") Услуги
-              li.main-nav__item.main-nav__item--active
-                a(href="#") Цены
-              li.main-nav__item.main-nav__item--active
-                a(href="#") Контакты
-            a.page-header__btn.btn(href="#") Заказать звонок
-            ul.main-nav__user-list
-              li.main-nav__user-item
-                a.main-nav__user-phone(href="#" title="phone") +7 (999) 280-07-00
+                a.main-nav__item-link(href="#") Студия
+              li.main-nav__item
+                a.main-nav__item-link(href="#") Портфолио
+              li.main-nav__item
+                a.main-nav__item-link(href="#") Услуги
+              li.main-nav__item
+                a.main-nav__item-link(href="#") Цены
+              li.main-nav__item
+                a.main-nav__item-link(href="#") Контакты
+          a.page-header__btn.btn(href="#") Заказать звонок
+          ul.main-nav__user-list
+            li.main-nav__user-item
+              a.main-nav__user-phone(href="#" title="phone") +7 (999) 280-07-00
+          .main-nav__mobile-wrap
+            .main-nav__btn-hamburger
+              span
+              span
+              span
+            .main-nav__btn-cross &#735;
+            .main-nav__mobile
+              ul
+                li
+                  a(href="#") Студия
+                li
+                  a(href="#") Портфолио
+                li
+                  a(href="#") Услуги
+                li
+                  a(href="#") Цены
+                li
+                  a(href="#") Контакты
     section.products
       .banner
         .container
@@ -174,6 +191,6 @@ html(lang='ru')
                 a.social-link.social-link--vk(href="#")
                 a.social-link.social-link--fb(href="#")
                 a.social-link.social-link--g(href="#")
-    script(src="js/jquery-2.2.0.min.js")
-    script(src="js/init.js")
+    script(src="src/js/jquery-2.2.0.min.js")
+    script(src="src/js/index.js")
 

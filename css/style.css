@@ -446,22 +446,57 @@ template {
   display: none;
 }
 
+body {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #000;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Times New Roman", serif;
-  font-size: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
-  background: #fff;
 }
 
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1260px;
-  }
+ul,
+ol {
+  list-style: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .container {
@@ -470,5 +505,73 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
+}
+
+.page-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-header__logo img {
+  width: 300px;
+  height: 65px;
+}
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.main-nav__item-link {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-nav__mobile-wrap {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav__mobile-wrap {
+    display: block;
+  }
+}
+
+.main-nav__btn-hamburger span {
+  display: block;
+  width: 19px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #000;
+  z-index: 99;
+}
+
+.main-nav__btn-hamburger:active span {
+  background-color: #fff;
+}
+
+.main-nav__btn-hamburger:focus span {
+  background-color: #fff;
+}
+
+.main-nav__btn-hamburger:hover span {
+  background-color: #ff2461;
 }

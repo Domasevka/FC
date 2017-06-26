@@ -10,22 +10,34 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="container"><a href="#" class="page-header__logo"><img src="img/logo.jpg" alt="Интерьерное бюро"></a>
-				<nav class="main-nav main-nav--closed main-nav--nojs">
-					<button type="button" class="main-nav__toogle">Открыть меню</button>
-					<div class="main-nav__wrapper">
+			<div class="container">
+				<div class="page-header__wrapper"><a href="#" class="page-header__logo"><img src="src/img/logo.svg" alt="Интерьерное бюро"></a>
+					<div class="main-nav">
 						<ul class="main-nav__list">
-							<li class="main-nav__item main-nav__item--active"><a href="#">Студия</a></li>
-							<li class="main-nav__item main-nav__item--active"><a href="#">Портфолио</a></li>
-							<li class="main-nav__item main-nav__item--active"><a href="#">Услуги</a></li>
-							<li class="main-nav__item main-nav__item--active"><a href="#">Цены</a></li>
-							<li class="main-nav__item main-nav__item--active"><a href="#">Контакты</a></li>
-						</ul><a href="#" class="page-header__btn btn">Заказать звонок</a>
-						<ul class="main-nav__user-list">
-							<li class="main-nav__user-item"><a href="#" title="phone" class="main-nav__user-phone">+7 (999) 280-07-00</a></li>
+							<li class="main-nav__item main-nav__item--active"><a href="#" class="main-nav__item-link">Студия</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__item-link">Портфолио</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__item-link">Услуги</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__item-link">Цены</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__item-link">Контакты</a></li>
 						</ul>
+					</div><a href="#" class="page-header__btn btn">Заказать звонок</a>
+					<ul class="main-nav__user-list">
+						<li class="main-nav__user-item"><a href="#" title="phone" class="main-nav__user-phone">+7 (999) 280-07-00</a></li>
+					</ul>
+					<div class="main-nav__mobile-wrap">
+						<div class="main-nav__btn-hamburger"><span></span><span></span><span></span></div>
+						<div class="main-nav__btn-cross">&#735;</div>
+						<div class="main-nav__mobile">
+							<ul>
+								<li><a href="#">Студия</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
-				</nav>
+				</div>
 			</div>
 		</header>
 		<section class="products">
@@ -145,7 +157,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/jquery-2.2.0.min.js"></script>
-		<script src="js/init.js"></script>
+		<script src="src/js/jquery-2.2.0.min.js"></script>
+		<script src="src/js/index.js"></script>
 	</body>
 </html>
